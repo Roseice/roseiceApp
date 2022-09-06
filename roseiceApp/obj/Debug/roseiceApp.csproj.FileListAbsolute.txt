@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\roseiceApp\roseiceApp\bin\Debug\roseiceApp.exe.config
+C:\Users\User\Desktop\roseiceApp\roseiceApp\bin\Debug\roseiceApp.exe
+C:\Users\User\Desktop\roseiceApp\roseiceApp\bin\Debug\roseiceApp.pdb
+C:\Users\User\Desktop\roseiceApp\roseiceApp\obj\Debug\roseiceApp.csprojAssemblyReference.cache
+C:\Users\User\Desktop\roseiceApp\roseiceApp\obj\Debug\roseiceApp.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\roseiceApp\roseiceApp\obj\Debug\roseiceApp.exe
+C:\Users\User\Desktop\roseiceApp\roseiceApp\obj\Debug\roseiceApp.pdb
