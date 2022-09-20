@@ -15,7 +15,7 @@ namespace roseiceApp
             //Console.WriteLine("請輸入姓名");
             //line = Console.ReadLine();//獲取使用者輸入存於line
             //Console.WriteLine("你好"+line);//顯示line儲存資料
-            //Console.ReadLine();//按Enter結束
+            //Console.ReadKey();//按Enter結束
             //宣告整數變數
             int intNumber;//宣告int型別變數
             ushort ushrNumber;//宣告ushort型別變數
@@ -36,12 +36,30 @@ namespace roseiceApp
             boolFlag = true;//設定boolFlag為true
             chCode = '\u0045';//設定chCode編碼值為\u0045
             sbyte intNumber2 = 100;//宣告sbyte整數變數,並自動轉換為int型別做儲存 
-            if (boolFlag = true)
-            { Console.WriteLine(intNumber.ToString()+boolFlag);}
+            Random ran = new Random();
+            int n = ran.Next(100);
+            Console.WriteLine("隨機產生數字="+ n);
+            if (n < 50)
+            {
+                boolFlag = true;
+                Console.WriteLine("判定小於50 bool=" + boolFlag);
+            }
             else
-            { Console.WriteLine(deNumber.ToString()+boolFlag);}
-            Console.WriteLine(intNumber.ToString()+"\n"+deNumber.ToString());//顯示存入的數值
-            Console.ReadLine();
+            {
+                boolFlag = false;
+                Console.WriteLine("判定大於50 bool=" + boolFlag); 
+            }
+            Console.WriteLine("intNumber="+intNumber.ToString()+"\n"+"deNumber="+deNumber.ToString());//顯示存入的數值
+            Console.ReadKey();
+            //將double轉換為float後存入並顯示
+            fltNumber = Convert.ToSingle(92.6);
+            fltNumber = (float)33.828;
+            Console.WriteLine("fltNumber=" + fltNumber.ToString());
+            //隱含型別轉換
+            deNumber = intNumber;
+            Console.WriteLine("decNumber=" + deNumber.ToString());
+            Console.ReadKey();
+            //各類運算練習
 
         }
     }
