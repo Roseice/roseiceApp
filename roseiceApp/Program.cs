@@ -59,8 +59,24 @@ namespace roseiceApp
             deNumber = intNumber;
             Console.WriteLine("decNumber=" + deNumber.ToString());
             Console.ReadKey();
-            //各類運算練習
+            //算數運算:+ - *  / %
+            Random rann = new Random();
+            int k = rann.Next(1000);//亂數int型別變數
+            float floata =30.2F;//宣告float型別變數為30.2(後置置元F代表fliat變數)
+            double doublea = 0.0;//宣告double型別變數為0.0(用來儲存運算解)
+            Console.WriteLine(k);
+            doublea = k + floata;//將inta(int型別)轉為float後與原floata(float型別變數)相加後存入doublea           
+            Console.WriteLine("k + floata=" + doublea.ToString());//加
+            doublea = k - floata;
+            Console.WriteLine("k - floata=" + doublea.ToString());//減
+            doublea = k * floata;
+            Console.WriteLine("k * floata=" + doublea.ToString());//乘
+            doublea = k / floata;
+            Console.WriteLine("k / floata=" + doublea.ToString());//除
+            doublea = k % floata;
+            Console.WriteLine("k % floata=" + doublea.ToString());//取餘數
 
+            Console.ReadKey();
         }
     }
 }
