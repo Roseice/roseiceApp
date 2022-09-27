@@ -91,6 +91,12 @@ namespace roseiceApp
             Console.WriteLine("n1是否大於等於f1 " + cp.ToString());
             cp = f2 <= n1;//f2是否小於等於n1
             Console.WriteLine("f2是否小於等於n1 " + cp.ToString());
+            //邏輯運算
+            int x = 3;//設定整數變數x=3
+            double y = 4.892;//設定實數變數y=4.892
+            Console.WriteLine((x > 0) && (x <= 5));//x>為True,so(x>0)且(x<=5)為True
+            Console.WriteLine((y < 0) || (y >= 5));//y<0為False,so(y<0)||(y>=5)為False
+            Console.WriteLine(!(x > y));//>x>y為False,so!(x>y)為True
             Console.ReadKey();
         }
     }
