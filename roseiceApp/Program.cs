@@ -75,7 +75,22 @@ namespace roseiceApp
             Console.WriteLine("k / floata=" + doublea.ToString());//除
             doublea = k % floata;
             Console.WriteLine("k % floata=" + doublea.ToString());//取餘數
-
+            //比較運算== != > < >= <=
+            int n1=5, n2=8;//宣告整數變數(int),設定初始值為n1=5,n2=8
+            float f1=3.2f, f2=3.200001f;//宣告浮點數變數(float),設定初始值為f1=3.2,f2=3.200001
+            bool cp;//宣告布林(bool)存放結果
+            cp = n1 == n2;//比較n1是否等於n2
+            Console.WriteLine("n1 相等於 n2 ? " + cp.ToString());
+            cp = f1 != f2;//比較f1是否不等於f2
+            Console.WriteLine("f1 不等於 f2 ? " + cp.ToString());
+            cp = n2 > 0;//n2是否大於0
+            Console.WriteLine("n2是否大於0 " + cp.ToString());
+            cp = f2 < 0;//f2是否小於0
+            Console.WriteLine("f2是否小於0 " + cp.ToString());
+            cp = n1 >= f1;//n1是否大於等於f1
+            Console.WriteLine("n1是否大於等於f1 " + cp.ToString());
+            cp = f2 <= n1;//f2是否小於等於n1
+            Console.WriteLine("f2是否小於等於n1 " + cp.ToString());
             Console.ReadKey();
         }
     }
