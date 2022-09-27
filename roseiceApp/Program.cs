@@ -97,6 +97,18 @@ namespace roseiceApp
             Console.WriteLine((x > 0) && (x <= 5));//x>為True,so(x>0)且(x<=5)為True
             Console.WriteLine((y < 0) || (y >= 5));//y<0為False,so(y<0)||(y>=5)為False
             Console.WriteLine(!(x > y));//>x>y為False,so!(x>y)為True
+            //遞增與遞減運算:++ --
+            int x1= 3, y1 = 3;
+            Console.WriteLine("x1++ ?" + (++x1));
+            Console.WriteLine("x1 ?" + x1);
+            x1 = 3;
+            Console.WriteLine("x1++ ?" + (x1++));
+            Console.WriteLine("x1 ?" + x1);
+            x1 = 3;
+            int r1 = ++x1;
+            x1 = 3;
+            int r2 = x1++;
+            Console.WriteLine("r1=" + r1 + "r2=" + r2);
             Console.ReadKey();
         }
     }
