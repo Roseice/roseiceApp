@@ -91,12 +91,14 @@ namespace roseiceApp
             Console.WriteLine("n1是否大於等於f1 " + cp.ToString());
             cp = f2 <= n1;//f2是否小於等於n1
             Console.WriteLine("f2是否小於等於n1 " + cp.ToString());
+            Console.ReadKey();
             //邏輯運算
             int x = 3;//設定整數變數x=3
             double y = 4.892;//設定實數變數y=4.892
             Console.WriteLine((x > 0) && (x <= 5));//x>為True,so(x>0)且(x<=5)為True
             Console.WriteLine((y < 0) || (y >= 5));//y<0為False,so(y<0)||(y>=5)為False
             Console.WriteLine(!(x > y));//>x>y為False,so!(x>y)為True
+            Console.ReadKey();
             //遞增與遞減運算:++ --
             int x1= 3, y1 = 3;//宣告整數變數x1為3,y1為3
             Console.WriteLine("x1++ ?" + (++x1));//x1=x1+1,然後輸出x1
@@ -119,7 +121,18 @@ namespace roseiceApp
             r1 = --y1;//先做y1=y1-1.再將y1存至r1變數中
             y1 = 3;
             r2 = y1--;//先將y1存至r2變數中,在做y1=y1-1
-
+            Console.WriteLine("r1,r2,y1?"+r1+","+r2+","+y1);//r1=2 r2=3 y1=2
+            Console.ReadKey();
+            //指派運算
+            int result = 0;
+            result = 3;
+            Console.WriteLine("result=" + result);//result=3
+            result -= 1;//result=result-1
+            Console.WriteLine("result=" + result);//result=2
+            result *= 3;//result=result*3
+            Console.WriteLine("result=" + result);//result=6
+            result /= 2;//result=result/2
+            Console.WriteLine("result=" + result);//result=3
             Console.ReadKey();
         }
     }
